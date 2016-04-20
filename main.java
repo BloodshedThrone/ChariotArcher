@@ -165,7 +165,7 @@ public class ChariotArcher {
                 {
                     hb1[row][column] = 'X';
                     p1hits = p1hits + 1;
-                    p1turn = p1turn + 2;
+                    p1turn = p1turn + 1;
                 }
                 else
                 hb1[row][column] = 'Y';
@@ -174,7 +174,7 @@ public class ChariotArcher {
                 w1 = true;
                 if (w1 == true) break;
             }
-                while (p1turn >= 1);
+                while (p1turn == 1);
             
             System.out.println ('\u000C');
             if (w1 == false) {
@@ -219,7 +219,7 @@ public class ChariotArcher {
                     {
                         hb2[row][column] = 'X';
                         p2hits = p2hits + 1;
-                        p2turn = p2turn + 2;
+                        p2turn = p2turn + 1;
                         continue;
                     }
                     else
@@ -227,7 +227,7 @@ public class ChariotArcher {
                     
                     if (p2hits >= 15)
                     w2 = true;
-                }while (p2turn>=1);
+                }while (p2turn==1);
                 System.out.println ('\u000C');
                 if (w2 == false) {
                 System.out.println ("Other player's turn");
